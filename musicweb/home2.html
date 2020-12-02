@@ -33,7 +33,120 @@
 <body onload="">
     <!--HEADER-->
     <div class="header">
+        <div class="menu">
+    <button class="openbtn" onclick="openNav()" id="buttonMenu">☰</button>
+    <div id="mySidebar" class="sidebar">
+        <div class="logo">
+            <a href="home2.html">Listener</a>
+        </div>
+        <div class="menu-content">
+            <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+            <a class="menulink" href="#" onclick="openMain(event,'Home')" id="defaultOpen">Home</a>
+            <a class="menulink" href="#" onclick="openMain(event,'Topic')">Topic</a>
+            <a class="menulink" href="#" onclick="openMain(event,'Album')">Album</a>
+            <a class="menulink" href="#" onclick="openMain(event,'Artist')">Artist</a>
+            <a class="menulink" href="#" onclick="openMain(event,'Mylibery')">My Libery</a>
+        </div>
 
+    </div>
+</div>
+<div class="logo">
+    <!--<img src="Icon_10-512.webp" alt="logo"> -->
+    <a href="home2.html">Listener</a>
+</div>
+
+<form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<div class="form">
+    <a onclick="openNav2('activeLogin')" href="#">Log in</a>
+    <span>|</span>
+    <a onclick="openNav2('activeSignup');" href="#">Sign up</a>
+
+
+</div>
+
+
+</div>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+    <div class="overlay-content">
+        <div id="main-form">
+            <div id="menu-form">
+                <span id="activeLogin" class="active-menu-form" onclick="openForm(event,'login-content-form',this)">Log
+                    in</span>
+                <span id="activeSignup" class="active-menu-form"
+                    onclick="openForm(event,'signup-content-form',this)">Sign up</span>
+            </div>
+            <div id="content-form">
+                <div id="login-content-form" class="content-form">
+                    <div class="block-item left">
+                        <h1 style="color:white;">Log in with:</h1>
+                    </div>
+                    <div class="block-item right">
+                        <button class="btn facebook" data-provider="facebook">
+                            <i class="fab fa-facebook-f"></i><span>Facebook</span></button>
+                        <button class="btn twitter" data-provider="twitter"><i
+                                class="fab fa-twitter"></i><span>Twitter</span></button>
+                        <button class="btn google" data-provider="google"><i
+                                class="fab fa-google"></i><span>Google</span></button>
+                    </div>
+                    <form action="/action_page.php">
+                        <hr>
+                        <div class="formcontainer">
+
+                            <div class="container">
+                                <label for="uname"><strong>Username</strong></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <label for="psw"><strong>Password</strong></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                            </div>
+                            <button type="submit">Login</button>
+                            <div class="container" style="height: 50px;margin-top: 10px;">
+                                <label style="padding-left: 15px">
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                <span class="psw"><a href="#"> Forgot password?</a></span>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div id="signup-content-form" class="content-form">
+                    <form action="/action_page.php">
+                        <div class="icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="container2">
+                            <label for="uname"><strong>Username</strong></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                            <label for="mail"><strong>E-mail</strong></label>
+                            <input type="email" placeholder="Enter E-mail" name="mail" required>
+                            <label for="psw"><strong>Password</strong></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label for="rpsw"><strong>Re-Password</strong></label>
+                            <input type="password" placeholder="Re-Password" name="rpsw" required>
+                        </div>
+                        <button type="submit"><strong>SIGN UP</strong></button>
+                        <div class="container2">
+                            <label style="padding-left: 15px">
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <span class="psw"><a href="#">Forgot password?</a></span>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('defaultOpen').click();
+    </script>
     </div>
     <!--HEADER-->
     <!--MAIN CONTENT-->
