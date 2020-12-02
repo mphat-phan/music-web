@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="CSSmusic.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript" src="JSmusic.js"></script>
+    <script>
+        $(function () {
+            $(".header").load("/musicweb/header.html");
+            //$(".footer").load("footer.html");
+            document.getElementById("play").click();
+        });
+        document.getElementById("play").click();
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body onload="">
+    <!--HEADER-->
+    <div class="header">
+
+    </div>
+    <!--HEADER-->
+    <!--MAIN CONTENT-->
+    <div id="main">
+        <div id="Home" class="tabcontent">
+            <div class="SectionSlide">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img class="centerSlide" onclick="openMusic3(0)" src="">
+                        <div class="textSlide" onclick="openMusic3(0)">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img class="centerSlide" onclick="openMusic3(1)" src="">
+                        <div class="textSlide" onclick="openMusic3(1)">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img class="centerSlide" onclick="openMusic3(2)" src="">
+                        <div class="textSlide" onclick="openMusic3(2)">Caption Three</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img class="centerSlide" onclick="openMusic3(3)" src="">
+                        <div class="textSlide" onclick="openMusic3(3)">Caption Three</div>
+                    </div>
+
+                </div>
+                <br>
+
+                <div style="text-align:center;margin-top: -19px;">
+
+                    <div class="caption" onclick="openMusic3(0)">
+                        <img class="rightSlide" style="float: left;" src="">
+                        <div class="rightSlideNameSong" style="float: left;" onclick="openMusic3(0)">Caption Three</div>
+                        <br>
+                        <div class="rightSlideNameArtist" style="float: left;">Caption Three</div>
+                    </div>
+
+
+
+                    <div class="caption" onclick="openMusic3(1)">
+                        <img class="rightSlide" style="float: left;" src="">
+                        <div class="rightSlideNameSong" style="float: left;" onclick="openMusic3(0)">Caption Three</div>
+                        <br>
+                        <div class="rightSlideNameArtist" style="float: left;">Caption Three</div>
+                    </div>
+
+
+                    <div class="caption" onclick="openMusic3(2)">
+                        <img class="rightSlide" style="float: left;" src="">
+                        <div class="rightSlideNameSong" style="float: left;" onclick="openMusic3(0)">Caption Three</div>
+                        <br>
+                        <div class="rightSlideNameArtist" style="float: left;">Caption Three</div>
+                    </div>
+                    <div class="caption" onclick="openMusic3(3)">
+                        <img class="rightSlide" style="float: left;" src="">
+                        <div class="rightSlideNameSong" style="float: left;" onclick="openMusic3(0)">Caption Three</div>
+                        <br>
+                        <div class="rightSlideNameArtist" style="float: left;">Caption Three</div>
+                    </div>
+                </div>
+            </div>
+            <div id="songmain">
+                <!-- <div id="hotsong" class="line">
+                    <h1>Hot Songs</h1>
+                    <div class="hotsong">
+                        <i class="fa fa-play-circle-o"></i>
+                        <img class="picHotSong" src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg"
+                            alt="">
+                        <span class="nameHotSong">We don't talk any more</span>
+                        <br>
+                        <span class="artistHotSong">Artist Song</span>
+                    </div>
+                    <div class="hotsong">
+                        <i class="fa fa-play-circle-o"></i>
+                        <img class="picHotSong" src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span class="nameHotSong">Name Song</span>
+                    
+                        <br>
+                        <span class="artistHotSong">Artist Song</span>
+                    </div>
+                    <div class="hotsong">
+                        <i class="fa fa-play-circle-o"></i>
+                        <img class="picHotSong" src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span class="nameHotSong"></span>
+                        <br>
+                        
+                        <span class="artistHotSong">Artist Song</span>
+                    </div>
+                    <div class="hotsong">
+                        <i class="fa fa-play-circle-o"></i>
+                        <img class="picHotSong" src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span class="nameHotSong"></span>
+
+                        <br>
+                        
+                        <span class="artistHotSong">Artist Song</span>
+                    </div>
+
+
+                </div>
+                <div id="newsong" class="line">
+                    <h1>New Songs</h1>
+                    <div class="newsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>We don't talk any more</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="newsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="newsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="newsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+
+
+                </div>
+                <div id="hitsong" class="line">
+                    <h1>Hit Songs</h1>
+                    <div class="hitsong">
+
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>We don't talk any more</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="hitsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="hitsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+                    <div class="hitsong">
+                        <img src="https://ipc.net.vn/wp-content/uploads/2019/01/h%C3%ACnh-1.jpg" alt="">
+                        <span>Name Song</span>
+                        <br>
+                        <span>Artist Song</span>
+                    </div>
+
+
+                </div> -->
+                <div id="top100" class="line">
+                    <h1>Top 100</h1>
+                    <div id="top100usuk" class="album" onclick="openInfoAlbum(this.id)">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+                    <div id="top100vn" class="album" onclick="openInfoAlbum(this.id)">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+
+                </div>
+                <div id="" class="line">
+                    <h1>Rap</h1>
+                    <div id="usukRap" class="album">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+                    <div id="vnRap" class="album">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+                    <div id="koreaRap" class="album">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+                    <div id="rapchill" class="album">
+                        <img class="picAlbum" src="" alt="">
+                        <div class="nameAlbum"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="Topic" class="tabcontent">
+            <h1>Coming soon</h1>
+            <!-- <h1>Topic</h1>
+            <hr>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div>
+            <div class="topic" id="">
+                <p>Topic1</p>
+            </div> -->
+        </div>
+
+        <div id="Album" class="tabcontent">
+            <div class="displayAlbum"></div>
+        </div>
+        <div id="Artist" class="tabcontent">
+            <div id="hotartist" class="line">
+                <h1>Artist
+                    <i class="fa fa-angle-left" onclick="backArtist()"></i>
+                    <i class="fa fa-angle-right" onclick="nextArtist()"></i>
+                </h1>
+
+                <div class="artist" id="#1" onclick="openInfoArtist(0)">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#1" onclick="openInfoArtist(1)">
+                    <img class="artistPic" src="" alt="">
+
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#2" onclick="openInfoArtist(2)">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#3" onclick="openInfoArtist(3)">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+                <div class="artist" id="#4">
+                    <img class="artistPic" src="" alt="">
+                    <h4 class="artistName"></h4>
+                    <div class="info-artist"></div>
+
+                </div>
+
+                <!--Demo-->
+                <div class="displayArtist">
+
+                </div>
+                <!--Demo-->
+            </div>
+        </div>
+        <div id="Mylibery" class="tabcontent">
+            <h1>Coming soon</h1>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="tableSong">
+            <button class="picSong" onclick="openCurrentSong()">
+
+                <img id="picCurrentSong1" src="" alt="">
+            </button>
+            <div id="playSong">
+                <img id="picCurrentSong2" src="" alt="">
+
+
+                <audio id="player" controls autoplay style="display:none;">
+                    <source id="songgg" src="" type="audio/mpeg" />
+                </audio>
+
+                <div id="audio-player">
+                    <div id="controls">
+                        <span id="time" class="time">00:00</span>
+                        <div id="progressbar"></div>
+                        <span id="end-time" class="time">00:00</span>
+                        <i id="mute" class="fa fa-volume-up"></i>
+                        <div id="volume"></div>
+                        <div id="lyricSong" onclick="overlayLyricSong()">Lyrics</div>
+                        <div id="playlist" onclick="overlayplaylist()">Playlist</div>
+                        <div id="info-tray">
+                            <span id="track-song">#</span>
+                            <span> - </span>
+                            <span id="track-name" onclick="openInfoArtist1(this)">#</span>
+                        </div>
+                    </div>
+
+                    <div id="controls-button">
+                        <i id="prev" onclick="previousSong()" class="fas fa-fast-backward"></i>
+                        <i id="play" class="fa fa-pause"></i>
+                        <i id="next" onclick="nextSong()" class="fas fa-fast-forward"></i>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="closeCurrentSong" id="closeSong" onclick="closeCurrentSong()">
+                    <i class="fa fa-window-minimize" style="font-size:24px"></i>
+                </a>
+                <div class="lyric">
+
+                    <button id="toggleTxt">Highlight on</button>
+
+                    <div class="text-highlight">
+
+                        <span class="aa" id="ts11">Từ ở đâu bay ra</span>
+                        <br><span class="aa" id="ts12">Loco Nichiwa</span>
+                        <br><span class="aa" id="ts13">Lên từng cấp như là</span>
+                        <br><span class="aa" id="ts14">Goku siêu xayda</span>
+                        <br><span class="aa" id="ts15">Vinahouse trong bar</span>
+                        <br><span class="aa" id="ts16">Dù cho tụi mày ghét cứ xông pha</span>
+                        <br><span class="aa" id="ts18">Tao nghe đâu không xa</span>
+                        <br><span class="aa" id="ts19">Nhạc tao phát từ trong loa</span>
+
+                        <br><span class="aa" id="ts20">'Papa grr tata'</span>
+                        <br><span class="aa" id="ts22">Thất bại là kẻ thù Aladdin và Jafar</span>
+                        <br><span class="aa" id="ts24">Staying humble like Kendrick Lamar</span>
+                        <br><span class="aa" id="ts26">Tài năng hiếm có đều từ nhóm Gerd mà ra</span>
+
+                        <br><span class="aa" id="ts29">Cách cầm mic như bị nẹp vai</span>
+                        <br><span class="aa" id="ts30">Có 1 sự thật HIEUTHUHAI này đẹp trai</span>
+                        <br><span class="aa" id="ts34">Gọi tao là 1 người nông dân vì tao đào hoa</span>
+                        <br><span class="aa" id="ts35">Luôn uôn bắt nắng ngay từ màu da (vàng)</span>
+
+                        <br><span class="aa" id="ts37">Nếu như tao là doanh nhân</span>
+                        <br><span class="aa" id="ts39">Âm nhạc là cái business</span>
+                        <br><span class="aa" id="ts41">Phải thật nhanh chân quyết liệt</span>
+                        <br><span class="aa" id="ts42">Hoàn thành cái wishlist</span>
+                        <br><span class="aa" id="ts43">Rock LV, Super Star</span>
+                        <br><span class="aa" id="ts44">Bubbery trông thật gang</span>
+                        <br><span class="aa" id="ts45">Phải thật sang, phải thật sang</span>
+                        <br><span class="aa" id="ts46">Gerdnang, Gerdnang</span>
+
+                        <br><span class="aa" id="ts47">[Chorus]</span>
+                        <br><span class="aa" id="ts50">Chơi bài này trong nhà để nó biến thành villa</span>
+                        <br><span class="aa" id="ts51">Cho bạn gái mày nghe để nó biến thành diva</span>
+                        <br><span class="aa" id="ts53">Chơi bài này trong pub rồi nó biến thành club</span>
+                        <br><span class="aa" id="ts55">Ở trên bàn từng là bao thuốc trước khi biến thành shisha</span>
+
+                        <br><span class="aa" id="ts58">Chơi bài này trong nhà để nó biến thành villa</span>
+                        <br><span class="aa" id="ts60">Cho bạn gái mày nghe để nó biến thành diva</span>
+                        <br><span class="aa" id="ts62">Chơi bài này trong pub rồi nó biến thành club</span>
+                        <br><span class="aa" id="ts63">>Ở trên bàn từng là bao thuốc trước khi biến thành shisha</span>
+
+                        <br><span class="aa" id="ts64">[Hook]</span>
+
+                        <br><span class="aa" id="ts64">Make shit bang (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64">Có nhiều fan (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64">Make it rain (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64">All the gang (khi tao chơi chơi chơi)</span>
+
+                        <br><span class="aa" id="ts64">Make shit bang (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64">Có nhiều fan (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64"> it rain (khi tao chơi chơi chơi)</span>
+                        <br><span class="aa" id="ts64">All the gang (khi tao chơi chơi chơi)</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="displayPlaylist">
+            <div class="playlistSong" onclick="clickPlaylist(0)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(1)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(2)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(3)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(4)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(5)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(6)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(7)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(8)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(9)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+            <div class="playlistSong" onclick="clickPlaylist(10)">
+                <img class="playlistSongImg" src="" alt="">
+                <div class="playlistSongName">##</div>
+
+                <div class="playlistSongArtist">##</div>
+            </div>
+
+        </div>
+        <!--MAIN CONTENT-->
+        <script>
+            var playlist = document.getElementById("playlist");
+            var displayPlaylist = document.getElementById("displayPlaylist");
+            var t = 0;
+
+            function overlayplaylist() {
+
+                if (t == 1) {
+                    displayPlaylist.style.height = "0px";
+                    t = 0;
+                    playlist.style.color = "white";
+
+                } else {
+                    displayPlaylist.style.height = "300px";
+                    t = 1;
+                    playlist.style.color = "crimson";
+                }
+
+
+            }
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("caption");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" activeDot", "");
+                }
+
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " activeDot";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <script>
+            var arr = [];
+
+            function overlayLyricSong() {
+                if (document.getElementById("playSong").style.height = "100%")
+                    document.getElementById("playSong").style.height = "100%"
+                document.getElementsByClassName("picSong")[0].style.display = "none";
+                document.getElementById("playSong").style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+                document.getElementsByClassName("lyric")[0].style.display = "block";
+            }
+            /*
+            -song
+            +idSong
+            +namesong
+            -album
+            +idAlbum
+            +nameAlbum
+            -quanhe
+            +idSong
+            +idAlbum
+            */
+            var album1 = [{
+                    id: 'top100usuk',
+                    name: 'Top 100 US-UK',
+                    pic: 'https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/5/e/0/2/5e02add03a731b2ed06bbfe64b4d9b0f.jpg',
+                    view: 10000
+                },
+                {
+                    id: 'top100vn',
+                    name: 'Top 100 VietNam',
+                    pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0SknUsSbLs_FImT2dPUA0-LVcB9oS7UThaA&usqp=CAU',
+                    view: 10000
+                },
+                {
+                    id: 'top100korea',
+                    name: 'Top 100 Korea',
+                    pic: 'https://avatar-nct.nixcdn.com/playlist/2018/07/24/c/b/1/a/1532412988147_500.jpg',
+                    view: 10000
+                },
+                {
+                    id: 'usukRap',
+                    name: 'US-UK Rap',
+                    pic: 'https://i.guim.co.uk/img/media/0b63841cffd5168e2743591d04dce33522567349/0_77_4079_2447/master/4079.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e4a8a316bc60bd1aecb9a8d9e598bd7b',
+                },
+                {
+                    id: 'vnRap',
+                    name: 'VietNam Rap',
+                    pic: 'https://avatar-nct.nixcdn.com/playlist/2018/07/24/c/b/1/a/1532412999588_500.jpg',
+                },
+                {
+                    id: 'koreaRap',
+                    name: 'Korea Rap',
+                    pic: 'https://c-sf.smule.com/rs-s90/arr/d2/a0/4ffa3a08-8de9-415e-b77c-040440c6f18f.jpg',
+                },
+                {
+                    id: 'rapchill',
+                    name: 'Chill Rap-Rap Love',
+                    pic: 'https://steamuserimages-a.akamaihd.net/ugc/955230308952651365/F671BE03FA91FED166781A9355A31BD4FAF39454/',
+                },
+
+
+            ];
+            var album = document.getElementsByClassName("album");
+            var picAlbum = document.getElementsByClassName("picAlbum");
+            var nameAlbum = document.getElementsByClassName("nameAlbum");
+
+            for (var i = 0; i < album.length; i++) {
+                for (var j = 0; j < album1.length; j++) {
+                    if (album[i].id == album1[j].id) {
+                        picAlbum[i].src = album1[j].pic;
+                        nameAlbum[i].innerHTML = album1[j].name;
+                    }
+                }
+            }
+            var songObj = [{
+
+                    id: 'mck',
+                    country: 'VN',
+                    pic: 'https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/0/5/d/e/05debcda2cc1bc2639c5f723433b645e.jpg',
+                    view: 1000003,
+                    year: 2020,
+                    nameSong: 'Em là châu báu',
+                    album: '',
+                    albumPic: 'https://upload.wikimedia.org/wikipedia/vi/4/43/Nine_Track_Mind.jpg',
+                    featuring: '',
+                    linkSong: 'music/Em Là Châu Báu - TLinh x MCK x CB  Official MV.m4a',
+                    slide: 'https://i.ytimg.com/vi/eo_JVyY1Ra4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBymQlac7rS1r4AJZvFfYS5NUYHOg',
+
+                },
+                {
+                    id: 'charlieputh',
+                    country: 'US',
+                    pic: 'https://photo-1-baomoi.zadn.vn/w1000_r1/2017_07_12_338_22735150/3fef25b9cdff24a17dee.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'See you again',
+                    album: 'Furious 7',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3',
+                    slide: 'https://jfarellmusic.com/wp-content/uploads/2015/03/870x489_wiz-khalifa-furious.jpg',
+                },
+                {
+                    id: 'edsheeran',
+                    country: 'UK',
+                    pic: 'https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Perfect',
+                    album: '÷',
+                    albumPic: 'https://upload.wikimedia.org/wikipedia/en/4/45/Divide_cover.png',
+                    featuring: '',
+                    linkSong: 'music/Perfect.mp3',
+                    slide: 'https://cloudimages.broadwayworld.com/columnpiccloud/1250-fcf45755808c997f40ed8afa273c3212.jpg',
+                },
+                {
+                    id: 'edsheeran',
+                    country: 'UK',
+                    pic: 'https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Shape of you',
+                    album: '÷',
+                    albumPic: 'https://upload.wikimedia.org/wikipedia/en/4/45/Divide_cover.png',
+                    featuring: '',
+                    linkSong: 'music/ShapeOfYou.mp3',
+                    slide: 'https://i.pinimg.com/originals/34/c3/9b/34c39b48c97add7d5139a5db40676016.jpg',
+                },
+                {
+                    id: 'edsheeran',
+                    country: 'UK',
+                    pic: 'https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Thinking out loud',
+                    album: 'X',
+                    albumPic: 'https://upload.wikimedia.org/wikipedia/vi/thumb/a/ad/X_cover.png/220px-X_cover.png',
+                    featuring: '',
+                    linkSong: 'music/ThinkingOutLoud.mp3'
+                },
+                {
+                    id: 'edsheeran',
+                    country: 'UK',
+                    pic: 'https://upload.wikimedia.org/wikipedia/vi/a/ad/X_cover.png',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Photograph',
+                    album: 'X',
+                    albumPic: 'https://upload.wikimedia.org/wikipedia/vi/thumb/a/ad/X_cover.png/220px-X_cover.png',
+                    featuring: '',
+                    linkSong: 'music/Photograph.mp3'
+                },
+                {
+                    id: 'edsheeran',
+                    country: 'UK',
+                    pic: 'https://avatar-nct.nixcdn.com/song/2019/05/09/4/c/7/3/1557420121232_640.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: "I don't care",
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    with: 'justinbieber',
+                    linkSong: 'music/IDontCare.mp3'
+                },
+                {
+                    id: 'charlieputh',
+                    country: 'US',
+                    pic: 'https://i.pinimg.com/originals/7c/10/31/7c1031ddb56975e1ce8ca36e5277026e.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: "We don't talk any more",
+                    album: 'Voicenotes',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/wedonttalkanymore.mp3'
+                },
+                {
+                    id: 'gernang',
+                    country: 'VN',
+                    pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYegKVPzr-GvAVhTgNyopwGQ9ED_PEEK7dAQ&usqp=CAU',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'CUA',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/CUA.mp3',
+                    theloai: 'rap'
+                },
+                {
+                    id: 'gernang',
+                    country: 'VN',
+                    pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYegKVPzr-GvAVhTgNyopwGQ9ED_PEEK7dAQ&usqp=CAU',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Bậc nhạc lên',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/Bật Nhạc Lên.m4a'
+                },
+                {
+                    id: 'gernang',
+                    country: 'VN',
+                    pic: 'https://avatar-nct.nixcdn.com/song/2020/07/29/5/7/4/a/1596008079635_640.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'CHƠI',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/HIEUTHUHAI - CHƠI ft MANBO (prod by. fewtile).mp3'
+                },
+                {
+                    id: 'dechoat',
+                    country: 'VN',
+                    pic: 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/02/23/0/e/6/7/1519379723596_600.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: '?',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/(Lyrics) – Dế Choắt - Rap Việt.m4a'
+                },
+                {
+                    id: 'gducky',
+                    country: 'VN',
+                    pic: 'https://profilenghesi.com/wp-content/uploads/2020/09/GDucky-la-ai-Chieu-cao-tieu-su-wiki-2.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'The right journey',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/[ Lyrics ] The right journey - GDucky  Team Karik #Thuy!.m4a'
+                },
+
+                {
+                    id: 'mck',
+                    country: 'VN',
+                    pic: 'https://s.mxmcdn.net/images-storage/albums4/6/0/3/4/8/0/42084306_350_350.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Lollipop',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/[Lyrics] Lollipop - TGSN (feat. nân x ngơ).m4a'
+                },
+                {
+                    id: 'chillies',
+                    country: 'VN',
+                    pic: 'https://images.genius.com/5822e08274e4684b00a177ff3ef2f33e.551x551x1.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Có Em Đời Bỗng Vui',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/Có Em Đời Bỗng Vui - Chillies (Official Video).m4a'
+                },
+                {
+                    id: 'mck',
+                    country: 'VN',
+                    pic: 'https://media.travelmag.vn/files/phamlinh/2020/11/12/3e1881a1-25e3-4199-9ecc-3ca258791dbf-1358.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: ' Dân Chơi Xóm',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/JustaTee, RPT MCK - Dân Chơi Xóm - Team Karik  RAP VIỆT [MV Lyrics].m4a'
+                },
+                {
+                    id: 'mck',
+                    country: 'VN',
+                    pic: 'https://media.travelmag.vn/files/phamlinh/2020/11/12/3e1881a1-25e3-4199-9ecc-3ca258791dbf-1358.jpg',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Va vào giai điệu này',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/vavaogiaidieu.mp3'
+                },
+                {
+                    id: 'chillies',
+                    country: 'VN',
+                    pic: 'https://lh3.googleusercontent.com/proxy/rxO3osOAkFY0GvmLdmFfnWONmkAw3SlrlHNIUNZMImB7DpAmfkuMhz5lfTYgE6_hy4cb_PqBFsGBU0tEtLfwoThxOATDgxGh2Ag805UVSXLwW_2JSpBXEXWVTYQ6ogb5NRjWQ-5HXc3l_Ez6iI0Q',
+                    view: 1000003,
+                    year: 2019,
+                    nameSong: 'Và thế là hết',
+                    album: '',
+                    albumPic: '',
+                    featuring: '',
+                    linkSong: 'music/Và Thế Là Hết - Chillies (Original).m4a'
+                },
+
+
+            ];
+
+
+
+            var artistObj = [{
+                    id: 'charlieputh',
+                    name: 'Charlie Puth',
+                    country: 'US',
+                    pic: 'https://zmp3-photo-fbcrawler.zadn.vn/avatars/9/d/c/b/9dcb4e8b8786587eef0a33ef56030517.jpg',
+                    follow: 1000003,
+
+                },
+                {
+                    id: 'edsheeran',
+                    name: 'Ed Sheeran',
+                    country: 'UK',
+                    follow: 13560000,
+                    pic: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFQBt1ajy7qAI_dsptAtIVRQ2-Z7XodA2X4Q&usqp=CAU'
+                },
+                {
+                    id: 'taylorswirt',
+                    name: 'Taylor Swirt',
+                    country: 'US',
+                    follow: 563,
+                    pic: 'https://hoc24.vn/images/avt/avt2569929_256by256.jpg'
+                },
+                {
+                    id: 'gernang',
+                    name: 'GERDNANG',
+                    country: 'VN',
+                    follow: 67954,
+                    pic: 'https://yt3.ggpht.com/a/AATXAJyPCL0IKNt-Y0BnUI9ufn3AI2dlC_rzZiqkYG2V=s900-c-k-c0x00ffffff-no-rj'
+                },
+                {
+                    id: 'sontungmtp',
+                    name: 'Son Tung M-TP',
+                    country: 'VN',
+                    follow: 679543,
+                    pic: 'https://zmp3-photo-fbcrawler.zadn.vn/avatars/e/e/ee58fcc0ff45002b8d416bd7685809ce_1487040461.jpg'
+                },
+                {
+                    id: 'jamesarthur',
+                    name: 'James Arthur',
+                    country: 'UK',
+                    follow: 67954,
+                    pic: 'https://yt3.ggpht.com/a/AATXAJzJkrKlFvqt1baKz93XZomr72SXFKbJ3fnnBF6I=s900-c-k-c0x00ffffff-no-rj'
+                },
+                {
+                    id: 'onedirection',
+                    name: 'One Direction',
+                    country: 'UK',
+                    follow: 67954,
+                    pic: 'https://a.wattpad.com/useravatar/OneDirection933.256.737575.jpg'
+                },
+                {
+                    id: 'avicii',
+                    name: 'Avicii',
+                    country: 'SWE',
+                    follow: 67954,
+                    pic: 'https://beatsaver.com/cdn/5224/b58185644975d8815a00fcfd8fa80cf2af119c24.jpg'
+                },
+                {
+                    id: 'andiez',
+                    name: 'Andiez',
+                    country: 'VN',
+                    follow: 67954,
+                    pic: 'https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/a/c/2/8/ac28312bfd39a049f88e5fcf05ced0c1.jpg'
+                },
+                {
+                    id: 'selenagomez',
+                    name: 'Selena Gomez',
+                    country: 'US',
+                    follow: 67954,
+                    pic: 'https://pbs.twimg.com/profile_images/3046621456/552e6312ab22b5e776be8b73a8c004ad.png'
+                },
+                {
+                    id: 'chillies',
+                    name: 'Chillies',
+                    country: 'VN',
+                    follow: 67954,
+                    pic: 'https://image.thanhnien.vn/800/uploaded/caotung/2019_07_29/55875389_1169858229841303_7524202620014034944_n_bdxj.jpg'
+                },
+                {
+                    id: 'mck',
+                    name: 'MCK - ngo',
+                    country: 'US',
+                    follow: 67954,
+                    pic: 'https://media.travelmag.vn/files/phamlinh/2020/11/12/3e1881a1-25e3-4199-9ecc-3ca258791dbf-1358.jpg'
+                },
+                {
+                    id: 'gducky',
+                    name: 'G Ducky',
+                    country: 'VN',
+                    follow: 67954,
+                    pic: 'https://profilenghesi.com/wp-content/uploads/2020/09/GDucky-la-ai-Chieu-cao-tieu-su-wiki-2.jpg'
+                },
+                {
+                    id: 'dechoat',
+                    name: 'Dế choắt',
+                    country: 'US',
+                    follow: 67954,
+                    pic: 'https://avatar-ex-swe.nixcdn.com/singer/avatar/2018/02/23/0/e/6/7/1519379723596_600.jpg'
+                },
+
+
+
+            ];
+            //-------------------------------------------------------------------------------
+            var site = 0;
+            var tracksong = document.getElementById('track-song');
+            var trackname = document.getElementById('track-name');
+            var picCurrentSong1 = document.getElementById('picCurrentSong1');
+            var picCurrentSong2 = document.getElementById('picCurrentSong2');
+            var zz = 0;
+
+            function nextSong() {
+                var lapvong = 0;
+                var laplai = 0;
+                if (arr[zz] == undefined && laplai == 0) {
+                    //alert(arrPlaylist[zz]);
+                    phatnhac(arrPlaylist[zz]);
+
+                    playlistt(arrPlaylist[zz]);
+                } else {
+                    if (arr[zz] == undefined) zz = 0;
+                    phatnhac(arr[zz]);
+                    //playlistt(arr[zz]);
+
+                }
+                //alert(zz);
+                zz++;
+                if (zz == songObj.length) zz = 0;
+
+                // if(arr[zz]==undefined) 
+                //phatnhac(zz);
+
+            }
+
+            function previousSong() {
+                //if(zz==2) zz=1;
+                zz -= 2;
+                if (zz < 0) zz = 0;
+                //if (zz == 3) zz -= 1;
+                if (arr[zz] == undefined) phatnhac(zz);
+                else phatnhac(arr[zz]);
+
+
+            }
+            playlistSong = document.getElementsByClassName("playlistSong");
+            playlistSongImg = document.getElementsByClassName("playlistSongImg");
+            playlistSongName = document.getElementsByClassName("playlistSongName");
+            playlistSongArtist = document.getElementsByClassName("playlistSongArtist");
+
+            function playlistt(current) {
+
+                for (var i = 0; i < arrPlaylist.length; i++) {
+
+                    playlistSongImg[i].src = songObj[arrPlaylist[i]].pic;
+                    playlistSongName[i].innerHTML = songObj[arrPlaylist[i]].nameSong;
+                    for (var j = 0; j < artistObj.length; j++) {
+                        if (artistObj[j].id == songObj[arrPlaylist[i]].id) {
+                            playlistSongArtist[i].innerHTML = artistObj[j].name;
+                            break;
+                        }
+                    }
+                }
+
+                for (var i = 0; i < arrPlaylist.length; i++) {
+                    playlistSong[i].style.backgroundColor = "";
+                    playlistSong[i].style.color = "";
+                }
+                //alert(songObj[current].nameSong);
+                for (var i = 0; i < arrPlaylist.length; i++) {
+
+                    if (songObj[current].nameSong == playlistSongName[i].innerHTML) {
+                        //alert(songObj[current].nameSong);
+
+                        playlistSong[i].style.color = "crimson";
+                        playlistSong[i].style.backgroundColor = "gainsboro";
+                    }
+
+                }
+
+            }
+
+            function clickPlaylist(current) {
+                for (var i = 0; i < arrPlaylist.length; i++) {
+                    playlistSong[i].style.backgroundColor = "";
+                    playlistSong[i].style.color = "";
+                }
+                //alert(songObj[current].nameSong);
+                for (var i = 0; i < arrPlaylist.length; i++) {
+
+                    if (songObj[current].nameSong == playlistSongName[i].innerHTML) {
+                        //alert(songObj[current].nameSong);
+
+                        playlistSong[i].style.color = "crimson";
+                        playlistSong[i].style.backgroundColor = "gainsboro";
+                    }
+
+                }
+                zz = current;
+                nextSong();
+            }
+
+
+            var centerSlide = document.getElementsByClassName("centerSlide");
+            var text = document.getElementsByClassName("textSlide");
+            var rightSlide = document.getElementsByClassName("rightSlide");
+            var rightSlideNameSong = document.getElementsByClassName("rightSlideNameSong");
+            var rightSlideNameArtist = document.getElementsByClassName("rightSlideNameArtist");
+            for (var i = 0; i < centerSlide.length; i++) {
+                centerSlide[i].src = songObj[i].slide;
+                text[i].innerHTML = songObj[i].nameSong;
+                rightSlideNameSong[i].innerHTML = songObj[i].nameSong;
+                rightSlide[i].src = songObj[i].slide;
+                for (var j = 0; j < artistObj.length; j++) {
+                    if (songObj[i].id == artistObj[j].id)
+                        rightSlideNameArtist[i].innerHTML = artistObj[j].name;
+                }
+            }
+
+            //-------------------------------------------------------------------------------
+            var artistName = document.getElementsByClassName("artistName");
+            var artistPic = document.getElementsByClassName("artistPic");
+            var artist = document.getElementsByClassName("artist");
+            var follower = document.getElementsByClassName("info-artist");
+            var listsong = document.getElementsByClassName("listsong");
+            for (var i = 0; i < artistName.length; i++) {
+                artistName[i].innerHTML = artistObj[i].name;
+                artist[i].id = artistObj[i].id;
+                artistPic[i].src = artistObj[i].pic;
+                //So luong follower
+                if (artistObj[i].follow > 1000000)
+                    follower[i].innerHTML = (artistObj[i].follow / 1000000).toFixed(2) + " milion Followers";
+                else if (artistObj[i].follow > 1000)
+                    follower[i].innerHTML = (artistObj[i].follow / 1000).toFixed(2) + "k Followers";
+                else follower[i].innerHTML = (artistObj[i].follow) + " Followers";
+                //So luong follower
+            }
+        </script>
+
+        <script>
+            var audio_player = $("#audio-player");
+            var play_button = $('#play');
+            var progress_bar = $("#progressbar");
+            var time = $("#time");
+            var mute_button = $('#mute');
+            var volume_bar = $('#volume');
+            //var more_info = $('#more-info-box');
+            //var info_tray = $("#info-tray");
+            var player = document.getElementById('player');
+            var duration = 0;
+            var volume = 0.75;
+
+            document.getElementById('play').click();
+            player.onloadedmetadata = function () {
+                duration = player.duration;
+                document.getElementById('end-time').innerHTML = getTime(parseInt(duration));
+
+                progress_bar.progressbar("option", {
+                    'max': duration
+                });
+            };
+            player.load();
+            player.volume = 0.75;
+            player.addEventListener("timeupdate", function () {
+                progress_bar.progressbar('value', player.currentTime);
+                time.text(getTime(player.currentTime));
+                if (player.currentTime == player.duration) nextSong();
+
+                //if( player.currentTime=0) document.getElementById('play').click();
+            }, false);
+
+            function getTime(t) {
+                var m = ~~(t / 60),
+                    s = ~~(t % 60);
+                return (m < 10 ? "0" + m : m) + ':' + (s < 10 ? "0" + s : s);
+            }
+
+
+
+            function getProgressBarClickInfo(progress_bar, e) {
+                var offset = progress_bar.position();
+                var x = e.pageX - offset.left; // or e.offsetX (less support, though)
+                var y = e.pageY - offset.top; // or e.offsetY
+                var max = progress_bar.progressbar("option", "max");
+                var value = x * max / progress_bar.width();
+
+                return {
+                    x: x,
+                    y: y,
+                    max: max,
+                    value: value
+                };
+            }
+
+            volume_bar.progressbar({
+                value: player.volume * 100,
+            });
+
+            volume_bar.click(function (e) {
+                var info = getProgressBarClickInfo($(this), e);
+                volume_bar.progressbar('value', info.value);
+                player.volume = info.value / info.max;
+            });
+
+            progress_bar.progressbar({
+                value: player.currentTime,
+            });
+
+            progress_bar.click(function (e) {
+                var info = getProgressBarClickInfo($(this), e);
+                player.currentTime = player.duration / info.max * info.value;
+            });
+
+            play_button.click(function () {
+                player[player.paused ? 'play' : 'pause']();
+                $(this).toggleClass("fa-play", player.paused);
+                $(this).toggleClass("fa-pause", !player.paused);
+            });
+
+            mute_button.click(function () {
+                if (player.volume == 0) {
+                    player.volume = volume;
+                } else {
+                    volume = player.volume;
+                    player.volume = 0;
+                }
+
+                volume_bar.progressbar('value', player.volume * 100);
+
+                $(this).toggleClass("fa-volume-up", player.volume != 0);
+                $(this).toggleClass("fa-volume-off", player.volume == 0);
+            });
+
+            window.onload = function () {
+                document.getElementById("play").click();
+            };
+            $(document).ready(function () {
+                $('#play').trigger('click');
+            });
+
+            //track.innerHTML=songObj[site].nameSong;
+        </script>
+        <script>
+            var textHighlightOn = true,
+                btnToggle = document.getElementById('toggleTxt'),
+                textDiv = document.querySelector('.text-highlight')
+            spns = document.getElementsByClassName('aa');
+            audi = document.getElementById("player");
+
+            audi.addEventListener("timeupdate", f1);
+
+            function f1() {
+
+                // remove all previous actives;
+                [].forEach.call(spns, function (e) {
+                    e.classList.remove('activeLyric');
+                    //e.classList.remove('active-prev');
+                });
+
+
+                for (var i = 0; i < spns.length; i++) {
+
+
+
+                    var time1 = Number(spns[i].id.slice(2));
+                    if (time1 < audi.currentTime) {
+
+                        if (i > 0) {
+
+                            spns[i - 1].classList.remove('activeLyric');
+                            //spns[i-1].classList.add('active-prev');
+
+                        }
+
+                        spns[i].classList.add('activeLyric');
+
+                    }
+
+                }
+            }
+
+
+            // listen for clicks on the spans.
+            [].forEach.call(spns, function (spn) {
+
+                spn.addEventListener("click", function () {
+
+                    for (var i in spns) {
+
+
+
+                    }
+
+                    var time1 = Number(this.id.slice(2));
+                    audi.currentTime = time1;
+
+                });
+
+            });
+
+            // Toggle text highlight
+            btnToggle.addEventListener("click", function () {
+
+                if (textHighlightOn) {
+                    textDiv.classList.add('off');
+                } else {
+                    textDiv.classList.remove('off');
+                }
+
+                this.innerHTML = 'Highlight ' + (textHighlightOn ? 'off ' : ' on');
+
+                textHighlightOn = !textHighlightOn;
+
+            });
+        </script>
+        <script>
+            function openMusic3(label) {
+
+                var textSlide = document.getElementsByClassName("textSlide");
+                for (var i = 0; i < songObj.length; i++) {
+                    if (textSlide[label].innerHTML == songObj[i].nameSong) {
+                        phatnhac(i);
+                        break;
+                    }
+
+
+                }
+
+            }
+        </script>
+
+
+</body>
+
+</html>

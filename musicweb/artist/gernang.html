@@ -1,0 +1,84 @@
+<head>
+    <script type="text/javascript" src="JSmusic.js">
+        
+    </script>
+    <style>
+        
+        .background {
+            background-position: center;
+            background-size: cover;
+            width: auto;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            overflow: auto;
+            background-image: url('https://images.genius.com/b52081a881069157b93d3c93b91d2532.1000x563x1.jpg');
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<div class="background">
+    <div class="inffoo">
+        <img class="imgArtist" id="gernang" src="" alt="">
+        <h1 class="nameArtist"></h1>
+    </div>
+
+
+
+</div>
+<button class="tablink2" onclick="openPage1('Story', this, 'crimson')" id="default11">Story</button>
+<button class="tablink2" onclick="openPage1('Song', this, ' rgb(78, 160, 214)')">Song</button>
+<button class="tablink2" onclick="openPage1('album', this, 'rgb(94, 221, 132)')">Album</button>
+<button class="tablink2" onclick="openPage1('MV', this, 'orange')">MV</button>
+
+<div id="Story" class="tabcontent2" style="background-image: url('');">
+    <h1 style="padding-top: 60px;color: white;">Tieu su</h1>
+    <p class="content">
+        
+    </p>
+
+</div>
+
+<div id="Song" class="tabcontent2">
+    <h1 style="margin-top: 80px;">Songs</h1>
+    <div id="adding">
+            <div class="listsong" onclick="openMusic(0)">
+                <div class="getOrderSong"></div>
+                <div class="order"></div>
+                <img src="" alt="" class="picListSong">
+                <div class="nameListSong"></div>
+                <div class="viewListSong"></div>
+                
+            </div>
+
+            <div class="listsong" onclick="openMusic(1)">
+                <div class="getOrderSong"></div>
+                <div class="order"></div>
+                <img src="" alt="" class="picListSong">
+                <div class="nameListSong"></div>
+                <div class="viewListSong"></div>
+            </div>
+            <div class="listsong" onclick="openMusic(1)">
+                <div class="getOrderSong"></div>
+                <div class="order"></div>
+                <img src="" alt="" class="picListSong">
+                <div class="nameListSong"></div>
+                <div class="viewListSong"></div>
+            </div>
+
+
+            
+            
+    </div>
+</div>
+
+<div id="album" class="tabcontent2">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="MV" class="tabcontent2">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+</div>

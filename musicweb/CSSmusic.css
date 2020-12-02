@@ -1,0 +1,1178 @@
+body {
+    font-family: Tahoma;
+    margin: 0;
+    background-color: rgb(28, 37, 37);
+    color: aliceblue;
+}
+
+/*Menu*/
+.menu-content .activemenu {
+    color: white;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 0px 0px 17px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    width: 200px;
+    clear: both;
+}
+
+.sidebar .menu-content a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    font-size: 36px;
+    cursor: pointer;
+    color: gray;
+    background: none;
+    border: none;
+    outline: 0;
+}
+
+.sidebar .closebtn:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 70px;
+    height: 70px;
+
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    clear: left;
+    padding-top: 70px;
+    margin-left: 250px;
+}
+
+.menu {
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px black;
+    z-index: 1;
+
+}
+
+/*Menu*/
+/*Logo*/
+.logo {
+    width: 140px;
+    height: 70px;
+    float: left;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+.logo a {
+    width: 142px;
+
+
+    line-height: 70px;
+    font-size: 30px;
+    color: crimson;
+}
+
+/*Logo*/
+
+/*FORM*/
+.form {
+    width: 120px;
+    height: 70px;
+    float: right;
+    display: block;
+}
+
+.form a {
+    line-height: 70px;
+    color: #111;
+    display: inline;
+}
+
+.form a:hover {
+    color: crimson;
+}
+
+/*FORM*/
+
+/*SEARCH*/
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 30px;
+    outline: 0;
+}
+
+form.example button {
+
+    margin-top: 15px;
+    float: left;
+    padding: 10px;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+
+form.example button:hover {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*SEARCH*/
+/*Current Song*/
+#playSong {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 121px;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    display: none;
+}
+
+.tableSong .picSong {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 27px;
+    color: crimson;
+    border: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#picCurrentSong1,
+#picCurrentSong2 {
+
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    float: left;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+#picCurrentSong1,
+#picCurrentSong2 {
+
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#track-name:hover {
+    color: crimson;
+}
+
+.closeCurrentSong {
+    position: absolute;
+    top: -8px;
+    right: 7px;
+    font-size: 36px;
+    color: crimson;
+}
+
+
+/*Current Song*/
+
+/*Overlay Form*/
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*Overlay Form*/
+/*Main Form*/
+#main-form {
+    width: 50%;
+    height: 570px;
+    margin: 0 auto;
+
+}
+
+#menu-form {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+}
+
+#menu-form span {
+    float: left;
+    width: 50%;
+    cursor: pointer;
+
+}
+
+.active-menu-form:hover {
+    border-bottom: 5px solid white;
+}
+
+.active {
+    border-bottom: 5px solid white;
+}
+
+
+/*Main Form*/
+
+/*content form*/
+.btn {
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    margin: 10px 0;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #e8e8e8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn span {
+    font-size: 22px;
+}
+
+.facebook {
+    background: #3a589e;
+}
+
+.twitter {
+    background: #429cd6;
+}
+
+.google {
+    background: #d34836;
+}
+
+.btn i {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.container {
+    width: auto;
+    height: 120px;
+    margin: 10px;
+}
+
+label {
+    font-size: large;
+    display: block;
+    color: white;
+    margin: 3px;
+}
+
+.content-form input[type=text],
+input[type=password],
+input[type=email] {
+    outline: 0;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin: 3px;
+    font-size: large;
+}
+
+form button {
+    margin-top: 10px;
+    font-size: large;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 110px;
+    justify-content: center;
+    color: #4286f4;
+}
+
+/*content form*/
+.tableSong {
+    width: 100%;
+    height: 70px;
+}
+
+/*MAIN*/
+/*main album*/
+#Album,
+#Topic {
+    padding-bottom: 70px;
+}
+
+.artist {
+    color: white;
+    background-color: darkslategrey;
+}
+
+.album {
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: darkslategrey;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.artist,
+.listalbum {
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: darkslategrey;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.listalbum:hover .fa,
+.hotsong:hover .fa {
+    display: block;
+}
+
+
+.listalbum .fa,
+.hotsong .fa {
+    position: relative;
+    top: -127px;
+    font-size: 50px;
+    color: crimson;
+    display: none;
+    width: 0;
+    height: 0;
+    left: 78px;
+}
+
+.hotsong .fa {
+    position: relative;
+    top: 25px;
+    font-size: 30px;
+    color: crimson;
+    display: none;
+    width: 0;
+    height: 0;
+    left: 334px;
+}
+
+.nameListAlbum {
+    margin: 0 auto;
+
+}
+
+.topic {
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-image: url(https://wall.vn/wp-content/uploads/2019/11/hinh-anh-canh-dong-hoa-48.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+}
+
+.topic p {
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: large;
+}
+
+h4 {
+    margin: 10px;
+    font-size: larger;
+}
+
+.album:hover,
+.artist:hover,
+.listalbum:hover {
+    background-color: rgb(204, 193, 193);
+}
+
+
+.album img,
+.listalbum img {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.artist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.line {
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+
+.line:last-child {
+    padding-bottom: 120px;
+}
+
+/*MAIN*/
+/*Slide bar*/
+.info-artist {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    font-size: small;
+}
+
+#audio-player {
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+
+    color: white;
+    -webkit-user-select: none;
+    /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+    /* mozilla browsers */
+    -khtml-user-select: none;
+    /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+    /* IE10+ */
+    background-color: black;
+}
+
+#controls {
+    height: 56px;
+    background-color: black;
+    width: auto;
+    padding-left: 20px;
+}
+
+.time {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: 14px;
+}
+
+.ui-progressbar {
+    background: #2B2B2B;
+}
+
+.ui-progressbar-value {
+    background-color: rgb(233, 17, 60);
+    transition: 0.3s;
+}
+
+#progressbar,
+#volume {
+    height: 15px;
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    position: relative;
+    top: 16px;
+    cursor: pointer;
+}
+
+#lyricSong,
+#playlist {
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    cursor: pointer;
+}
+
+#lyricSong:hover,
+#playlist:hover {
+    color: crimson;
+}
+
+
+#progressbar {
+    width: 50%;
+    background: crimson;
+}
+
+#play,
+#mute,
+#next,
+#prev {
+    font-size: 22px;
+    width: 20px;
+    position: relative;
+    top: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#play {
+    margin-left: 15px;
+}
+
+#volume {
+    width: 10%;
+    background: crimson;
+}
+
+/*PlaySongbar*/
+#info-tray {
+    line-height: 50px;
+    width: auto;
+
+
+}
+
+#controls-button {
+    margin: 0 45%;
+    width: 200px;
+}
+
+/*Slide bar*/
+.lyric {
+    width: 100%;
+    height: 86%;
+    display: none;
+    text-align: center;
+    font-size: 30px;
+
+
+
+}
+
+.aa {
+    color: white;
+    display: ;
+}
+
+.activeLyric {
+    color: crimson;
+    position: sticky;
+    display: inline;
+
+}
+
+.text-highlight.off span {
+    background: transparent;
+}
+
+/*////////////////////////////////////////////*/
+
+.nameArtist {
+    margin: 0px
+}
+
+.imgArtist {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.inffoo {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.tablink2 {
+    background-color: white;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    border-bottom: 1px solid crimson;
+}
+
+.tablink2:hover {
+    color: crimson;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent2 {
+    color: #e8e8e8;
+    display: none;
+    height: 100%;
+
+}
+
+p,
+.content {
+    display: block;
+    font-size: larger;
+    margin-top: 10px;
+    font-family: Tahoma;
+    color: white;
+    width: 631px;
+    margin: 0 auto;
+}
+
+.listsong,
+.listsong1 {
+    display: block;
+    float: left;
+
+    width: 100%;
+    height: 100px;
+
+    line-height: 100px;
+    cursor: pointer;
+    font-size: larger;
+    border-bottom: 1px solid crimson;
+}
+
+.listsong img,
+.listsong1 img {
+    width: 60px;
+}
+
+.listsong:hover,
+.listsong1:hover {
+
+    color: crimson;
+
+}
+
+#Story {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+li {
+    line-height: 70px;
+}
+
+ul {
+    color: black;
+}
+
+.order,
+.picListSong,
+.nameListSong,
+.viewListSong,
+.order1,
+.picListSong1,
+.nameListSong1,
+.viewListSong1 {
+    display: inline;
+}
+
+.picListSong,
+.picListSong1 {
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+    top: ;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: -1;
+}
+
+.picListSong:hover,
+.picListSong1:hover {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .100s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.viewListSong,
+.viewListSong1 {
+    position: relative;
+    float: right;
+    font-size: small;
+    color: gray;
+
+}
+
+.nameListSong,
+.nameListSong1 {
+    width: 100px;
+    height: 100px;
+}
+
+.getOrderSong,
+.getOrderSong1 {
+    display: none;
+}
+
+
+.mySlides {
+    display: none;
+    cursor: pointer;
+}
+
+.slideShow {
+    width: 100%;
+    height: 300px;
+}
+
+.slideShow img {
+    background-position: center;
+    background-size: cover;
+}
+
+.mySlides {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    z-index: -1;
+    height: 400px;
+    float: left;
+}
+
+/* Caption text */
+.textSlide {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: crimson;
+    font-size: 17px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activeDot {
+    background-color: rgb(154, 201, 202);
+    color: black;
+
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.centerSlide {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 400px;
+    width: 800px;
+    cursor: pointer;
+
+}
+
+
+
+.SectionSlide {
+    width: auto;
+    height: 424px;
+    background-color: ;
+    z-index: 0;
+    position: relative;
+    padding-top: 21px;
+    margin: 0px;
+    padding-left: 20px;
+
+}
+
+
+/* album*/
+.blur {
+    width: 85%;
+    filter: blur(86px);
+    position: absolute;
+    margin: -72px;
+    height: 286px;
+    z-index: -1;
+}
+
+.picAlbum1 {
+    width: 200px;
+    position: relative;
+    float: left;
+    z-index: -1;
+}
+
+.infoAlbum {
+    position: relative;
+    float: left;
+    z-index: -1;
+}
+
+.tieudealbum {
+    font-size: 70px;
+}
+
+.solieu {
+    display: flex;
+}
+
+.solieu div {
+    display: list-item;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: small;
+}
+
+.backgroundAlbum {
+    width: 100%;
+    margin-top: 10px;
+    height: 200px;
+}
+
+#iconAlbum {
+    font-size: 45px;
+}
+
+#favorite {
+
+    z-index: -1;
+
+
+}
+
+#phatnhac {
+    width: 40px;
+}
+
+#phatnhac:hover,
+#favorite:hover {
+    font-size: 50px;
+}
+
+/*Scrooll*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.caption {
+    width: 25%;
+    float: left;
+    margin-bottom: 29px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: ;
+
+}
+
+#hotsong {
+    width: 400px;
+    float: left;
+    clear: both;
+    margin-left: 10px;
+}
+
+#newsong,
+#hitsong {
+    width: 400px;
+    float: left;
+    margin-left: 10px;
+}
+
+.hotsong,
+.newsong,
+.hitsong {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: smaller;
+    background-color: darkslategrey;
+
+
+}
+
+.hotsong:hover,
+.newsong:hover,
+.hitsong:hover {
+    background-color: rgb(207, 216, 223);
+}
+
+#songmain img {
+    float: left;
+    border-radius: 10px;
+}
+
+#displayPlaylist {
+    position: fixed;
+    right: 0px;
+    bottom: 121px;
+    width: 400px;
+    height: 0;
+    background-color: black;
+    color: bisque;
+    transition: 0.5s;
+    overflow-y: scroll;
+}
+
+#displayPlaylist::-webkit-scrollbar {
+    display: none;
+}
+
+#playSong::-webkit-scrollbar {
+    display: none;
+}
+
+.playlistSong {
+    display: inline-flex;
+    font-size: small;
+    line-height: 50px;
+    margin: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.playlistSongImg {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.playlistSongName {
+    border-right: 1px solid;
+    margin-right: 10px;
+    padding-right: 10px;
+    width: 40%;
+}
+
+#hotartist i {
+    font-size: 30px;
+    color: white;
+    float: ;
+    display: inline;
+    width: 50px;
+    margin-left: 20px;
+}
+
+#hotartist i:hover {
+    font-size: 40px;
+
+}
+
+#hotartist h1 {
+    height: 50px;
+    line-height: 50px;
+
+}
